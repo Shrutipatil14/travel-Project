@@ -1,0 +1,235 @@
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+header
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo
+{
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.showcase
+{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+  z-index: 2;
+}
+.showcase.active
+{
+  right: 300px;
+}
+
+.showcase video
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.text
+{
+  position: relative;
+  z-index: 10;
+}
+
+.text h2
+{
+  font-size: 5em;
+  font-weight: 800;
+  color:white;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text h3
+{
+  font-size: 4em;
+  font-weight: 700;
+  color:white;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text p
+{
+  font-size: 1.1em;
+  color:crimson;
+  margin: 20px 0;
+  font-weight: 700;
+  font-size: 2em;;
+  max-width: 1000%;
+}
+.text a
+{
+  display: inline-block;
+  font-size: 1em;
+  background:white;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+.text a:hover
+{
+  letter-spacing: 6px;
+}
+.social
+{
+  position: absolute;
+  z-index: 10;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social li
+{
+  list-style: none;
+}
+.social li a
+{
+  display: inline-block;
+  margin-right: 20px;
+  filter: invert(1);
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+
+
+.popular-tours{
+  padding: 5rem 0 10rem 0;
+}
+
+.popular-tours-heading{
+  font-size: 8rem;
+  text-align: center;
+  margin-bottom: 20rem;
+}
+
+.cards-wrapper{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card{
+  width: 35rem;
+  position: relative;
+  perspective: 150rem;
+}
+
+.card-image{
+  width: 100%;
+  border-radius: .3rem .3rem 0 0;
+}
+
+.front-side{
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  opacity: .9;
+}
+
+.tour-name{
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  top: 30%;
+  right: 1.5rem;
+  color:black;
+}
+
+.card-list{
+  width: 80%;
+  margin: auto;
+  padding: 2rem 0 3rem 0;
+}
+
+.card-list-item{
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 2rem 0;
+  padding-bottom: 1.4rem;
+}
+
+.back-side{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: .3rem;
+  box-shadow: 0 2rem 4rem gray;
+  flex-direction: column;
+}
+
+.change > .back-side{
+  box-shadow: 0 .5rem 2rem white;
+  opacity: .9;
+}
+
+.tour-price{
+  font-size: 5rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+.card-button{
+  border: none;
+  font-size: 2.5rem;
+  padding: 1rem 2rem;
+  letter-spacing: .2rem;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+.navigation-button{
+  position: absolute;
+  top: .5rem;
+  left: .5rem;
+  padding: .5rem;
+  background-color: white;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  cursor: pointer;
+}
+
+.navigation-button:hover
+{
+  background-color:blueviolet;
+
+}
+
